@@ -192,4 +192,4 @@ dotnet run
 
 ## License
 
-[Add your license information here]
+This project is free to use. Just clone / fork it.
