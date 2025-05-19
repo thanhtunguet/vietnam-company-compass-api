@@ -16,7 +16,7 @@ namespace VietnamBusiness.Models
         public string Code { get; set; }
 
         [MaxLength(500)]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         public DateTime? CreatedAt { get; set; }
 
@@ -25,21 +25,21 @@ namespace VietnamBusiness.Models
         public DateTime? DeletedAt { get; set; }
 
         [MaxLength(100)]
-        public string RootCode { get; set; }
+        public string? RootCode { get; set; }
 
         public long? Vsic2007Id { get; set; }
 
         [MaxLength(100)]
-        public string Vsic2007RootCode { get; set; }
+        public string? Vsic2007RootCode { get; set; }
 
         [MaxLength(100)]
-        public string Vsic2007Code { get; set; }
+        public string? Vsic2007Code { get; set; }
 
         [MaxLength(500)]
-        public string Vsic2007Name { get; set; }
+        public string? Vsic2007Name { get; set; }
         
         [MaxLength(1000)]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         // Navigation property
         public virtual ICollection<CompanyBusinessMapping> CompanyBusinessMappings { get; set; }

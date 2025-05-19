@@ -12,33 +12,33 @@ namespace VietnamBusiness.Models
         public long Id { get; set; }
 
         [MaxLength(100)]
-        public string TaxCode { get; set; }
+        public string? TaxCode { get; set; }
 
         [MaxLength(500)]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         [MaxLength(500)]
-        public string Representative { get; set; }
+        public string? Representative { get; set; }
 
         [MaxLength(500)]
-        public string MainBusiness { get; set; }
+        public string? MainBusiness { get; set; }
 
         [MaxLength(500)]
-        public string Address { get; set; }
+        public string? Address { get; set; }
 
         [MaxLength(255)]
-        public string FormattedAddress { get; set; }
+        public string? FormattedAddress { get; set; }
 
         public DateTime? IssuedAt { get; set; }
 
         [MaxLength(500)]
-        public string CurrentStatus { get; set; }
+        public string? CurrentStatus { get; set; }
 
         [MaxLength(500)]
-        public string AlternateName { get; set; }
+        public string? AlternateName { get; set; }
 
         [MaxLength(2048)]
-        public string Slug { get; set; }
+        public string? Slug { get; set; }
 
         public bool? IsCrawledFull { get; set; }
 
@@ -61,22 +61,22 @@ namespace VietnamBusiness.Models
         public long? StatusId { get; set; }
 
         [MaxLength(4000)]
-        public string Description { get; set; }
+        public string? Description { get; set; }
         
         [MaxLength(50)]
-        public string PhoneNumber { get; set; }
+        public string? PhoneNumber { get; set; }
         
         [MaxLength(100)]
-        public string Email { get; set; }
+        public string? Email { get; set; }
         
         [MaxLength(255)]
-        public string Website { get; set; }
+        public string? Website { get; set; }
         
         [MaxLength(255)]
-        public string LegalRepresentative { get; set; }
+        public string? LegalRepresentative { get; set; }
         
         [MaxLength(100)]
-        public string BusinessType { get; set; }
+        public string? BusinessType { get; set; }
         
         public int? FoundedYear { get; set; }
         

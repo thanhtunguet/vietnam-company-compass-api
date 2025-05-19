@@ -277,9 +277,42 @@ namespace VietnamBusiness.Data
 
             // Seed Business Categories
             modelBuilder.Entity<Business>().HasData(
-                new Business { Id = 1, Name = "Bán lẻ", Code = "RETAIL", RootCode = "RETAIL", Description = "Kinh doanh bán lẻ", CreatedAt = DateTime.UtcNow, UpdatedAt = DateTime.UtcNow },
-                new Business { Id = 2, Name = "Công nghệ thông tin", Code = "IT", RootCode = "IT", Description = "Dịch vụ CNTT", CreatedAt = DateTime.UtcNow, UpdatedAt = DateTime.UtcNow },
-                new Business { Id = 3, Name = "Vận tải", Code = "TRANSPORT", RootCode = "TRANSPORT", Description = "Dịch vụ vận tải", CreatedAt = DateTime.UtcNow, UpdatedAt = DateTime.UtcNow }
+                new Business { 
+                    Id = 1, 
+                    Name = "Bán lẻ", 
+                    Code = "RETAIL", 
+                    RootCode = "RETAIL", 
+                    Description = "Kinh doanh bán lẻ", 
+                    Vsic2007Code = "47", 
+                    Vsic2007RootCode = "47", 
+                    Vsic2007Name = "Bán buôn và bán lẻ; sửa chữa ô tô, mô tô, xe máy và xe có động cơ khác", 
+                    CreatedAt = DateTime.UtcNow, 
+                    UpdatedAt = DateTime.UtcNow 
+                },
+                new Business { 
+                    Id = 2, 
+                    Name = "Công nghệ thông tin", 
+                    Code = "IT", 
+                    RootCode = "IT", 
+                    Description = "Dịch vụ CNTT", 
+                    Vsic2007Code = "62", 
+                    Vsic2007RootCode = "62", 
+                    Vsic2007Name = "Lập trình máy vi tính, tư vấn và các hoạt động liên quan", 
+                    CreatedAt = DateTime.UtcNow, 
+                    UpdatedAt = DateTime.UtcNow 
+                },
+                new Business { 
+                    Id = 3, 
+                    Name = "Vận tải", 
+                    Code = "TRANSPORT", 
+                    RootCode = "TRANSPORT", 
+                    Description = "Dịch vụ vận tải", 
+                    Vsic2007Code = "49", 
+                    Vsic2007RootCode = "49", 
+                    Vsic2007Name = "Vận tải đường bộ và vận tải đường ống", 
+                    CreatedAt = DateTime.UtcNow, 
+                    UpdatedAt = DateTime.UtcNow 
+                }
             );
 
             // Seed Users
@@ -312,6 +345,7 @@ namespace VietnamBusiness.Data
                 { 
                     Id = 1, 
                     Name = "Công ty TNHH ABC", 
+                    AlternateName = "ABC Company Limited",
                     TaxCode = "0123456789", 
                     Address = "123 Đường A, Phường Phúc Xá", 
                     ProvinceId = 1, 
@@ -333,6 +367,7 @@ namespace VietnamBusiness.Data
                 { 
                     Id = 2, 
                     Name = "Công ty Cổ phần XYZ", 
+                    AlternateName = "XYZ Joint Stock Company",
                     TaxCode = "9876543210", 
                     Address = "456 Đường B, Phường Bến Nghé", 
                     ProvinceId = 2, 

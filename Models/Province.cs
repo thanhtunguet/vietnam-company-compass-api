@@ -16,16 +16,16 @@ namespace VietnamBusiness.Models
         public string Code { get; set; }
 
         [MaxLength(500)]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         [MaxLength(500)]
-        public string Type { get; set; }
+        public string? Type { get; set; }
 
         [MaxLength(500)]
-        public string EnglishName { get; set; }
+        public string? EnglishName { get; set; }
 
         [MaxLength(255)]
-        public string Slug { get; set; }
+        public string? Slug { get; set; }
 
         public DateTime? CreatedAt { get; set; }
 
